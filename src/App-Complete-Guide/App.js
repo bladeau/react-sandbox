@@ -4,7 +4,7 @@ import './styles.css';
 
 export default function App() {
   //www.mockaroo.com/
-  https: const [userState, setUserState] = useState({
+  const [userState, setUserState] = useState({
     persons: [
       { id: 1, name: 'Perkin', age: 38 },
       { id: 2, name: 'Fairfax', age: 33 },
