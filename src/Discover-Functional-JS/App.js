@@ -2,11 +2,11 @@ import React from "react";
 import userData from "./userData";
 
 //Check if Object or Array
-var x = userData;
+const x = userData;
 // { a: 1, b: 2 };
-var y = [1, 2, 3];
+const y = [1, 2, 3];
 
-let checkObjOrArrayPrint = (
+const checkObjOrArrayPrint = (
   <div>
     <b>Check if Object or Array:</b>
     {x.constructor.name === "Object" && <p>{x.constructor.name}</p>}
@@ -19,8 +19,8 @@ let numbers = [1, 2, 3, 4, 5];
 
 const isEven = (x) => x % 2 === 0;
 
-let evenNumbers = numbers.filter(isEven);
-let filterEvenNumbersPrint = (
+const evenNumbers = numbers.filter(isEven);
+const filterEvenNumbersPrint = (
   <div>
     <b>Filter only even Numbers:</b>
     <br />
@@ -32,12 +32,12 @@ let filterEvenNumbersPrint = (
 
 //Reduce/Agg - Maximum
 numbers = [12, 4, 2, 2435, 343431, 54353, 3345];
-let maxNumberFunc = (currentMax, currentNumber) => {
+const maxNumberFunc = (currentMax, currentNumber) => {
   currentMax = Math.max(currentMax, currentNumber);
   return currentMax;
 };
 
-let maxNumberPrint = (
+const maxNumberPrint = (
   <div>
     <b>Maximum:</b>
     <br />
@@ -60,7 +60,7 @@ numbers = [1312, 4, 2, 2435, 3, 645, 3345];
 
 const sortedNumbers = [...numbers].sort(sortAsc);
 
-let sortedNumbersPrint = (
+const sortedNumbersPrint = (
   <div>
     <b>Sorted Numbers:</b>
     <br />
